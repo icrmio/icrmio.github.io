@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [乱译]关于游戏的可玩性
+title: 关于游戏的可玩性
 create_date: 2012-08-05
 modify_date: 2019-09-29
 excerpt: 看到Wikipedia上的Gameplay词条写的不错，就摘录一些放在这里供日后参考。
