@@ -5,7 +5,7 @@ create_date: 2015-10-18
 modify_date: 2019-09-30
 excerpt: 国庆自驾去了趟青海，总行程近五千公里，平均每天七百公里。假期基本都是在赶路中度过的，真是名副其实的自驾游。
 --- 
-<a href="http://aicraft.net/wp-content/uploads/2015/08/qinghai.jpg"><img class="alignnone size-full wp-image-458" src="http://aicraft.net/wp-content/uploads/2015/08/qinghai.jpg" alt="qinghai" width="1024" height="308" /></a>
+![青海行](/static/images/qinghaixing/qinghai.jpg)
 
 国庆自驾去了趟青海，总行程近五千公里，平均每天七百公里。假期基本都是在赶路中度过的，真是名副其实的自驾游。还好我喜欢开车，所以这个过程对我来说也不算是煎熬。
 
