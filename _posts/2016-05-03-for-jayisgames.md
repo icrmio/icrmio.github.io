@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 纪念Jayisgames
-create_date: 2016-03-03
+create_date: 2016-05-03
 modify_date: 2019-10-01
 excerpt: 这世界上最难的电子游戏，是制作一款电子游戏。这世界上最棒的电子游戏，也是制作一款电子游戏。
 --- 
