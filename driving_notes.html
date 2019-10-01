@@ -26,9 +26,8 @@ layout: default
 
 <ul>
   {% for i in (1..count) %}
-    {% assign index = count - i + 1 %}
     <li>
-      <h3>{{ i }}|{{ index }}|{{ count }}<a href="{{ '/driving/driving_note_' | append: index | append: ".html" }}">驾驶笔记 {{ index }}</a></h3>
+      <h3><a href="{{ '/driving/driving_note_' | append: count - i + 1 | append: ".html" }}">驾驶笔记 {{ count - i + 1 }}</a></h3>
     </li>
   {% endfor %}
 </ul>
