@@ -16,12 +16,11 @@ layout: default
     {% endfor %}
   
     {% if found == false %}
-      not found
       {% break %}
     {% endif %}
   
     <li>
-      <h3><a href="{{ note_path }}">驾驶笔记 {{ i }}</a></h3>
+      <h3><a href="{{ '/driving/driving_note_' | append: i | append: ".html" }}">驾驶笔记 {{ i }}</a></h3>
     </li>
   
   {% endfor %}
