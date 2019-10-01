@@ -2,26 +2,30 @@
 layout: default
 ---
 
-<ul>
-  {% for i in (1..100) %}
-    {% assign note_path = "/driving/driving_note_" | append: i | append: ".md" %}
-    
-    {% assign found = false %}
-  
-    {% for static_file in site.static_files %}
-      {% if static_file.path == note_path %}
-          {% assign found = true %}
-          {% break %}
-      {% endif %}
-    {% endfor %}
-  
-    {% if found == false %}
-      {% break %}
+{% for i in (1..100) %}
+  {% assign note_path = "/driving/driving_note_" | append: i | append: ".md" %}
+
+  {% assign found = false %}
+
+  {% for static_file in site.static_files %}
+    {% if static_file.path == note_path %}
+        {% assign found = true %}
+        {% break %}
     {% endif %}
-  
+  {% endfor %}
+
+  {% if found == false %}
+    {% break %}
+  {% endif %}
+
+  {% assign count = i %}
+
+{% endfor %}
+
+<ul>
+  {% for i in (1..count) %}
     <li>
       <h3><a href="{{ '/driving/driving_note_' | append: i | append: ".html" }}">驾驶笔记 {{ i }}</a></h3>
     </li>
-  
   {% endfor %}
 </ul>
