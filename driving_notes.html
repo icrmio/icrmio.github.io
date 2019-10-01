@@ -5,8 +5,7 @@ layout: default
 <ul>
   {% for i in (1..100) %}
     {% assign note_path = "/_driving/driving_note_" %}
-    {{ note_path | append: i }}
-    {{ note_path | append: ".html" }}
+    {{ note_path | append: i | append: ".html"}}
     
     {% assign found = true %}
   
