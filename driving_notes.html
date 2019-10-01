@@ -22,12 +22,12 @@ layout: default
 
 {% endfor %}
 
-共 {{ count }} 篇
+共 {{ count }} 篇?
 
 <ul>
   {% for i in (1..count) %}
     <li>
-      <h3>{{ i }}|{{ count }}|{{ count - i + 1 }}<a href="{{ '/driving/driving_note_' | append: count - i + 1 | append: ".html" }}">驾驶笔记 {{ count - i + 1 }}</a></h3>
+      <h3>{{ i }}|{{ count }}|{{ count-i }}<a href="{{ '/driving/driving_note_' | append: count - i + 1 | append: ".html" }}">驾驶笔记 {{ count - i + 1 }}</a></h3>
     </li>
   {% endfor %}
 </ul>
