@@ -4,14 +4,13 @@ layout: default
 
 <ul>
   {% for i in (1..100) %}
-    {% assign note_path = "/_driving/driving_note_" %}
-    {{ note_path | append: i | append: ".html"}}
+    {% assign note_path = "/_driving/driving_note_" | append: i | append: ".html" %}
     
-    {% assign found = true %}
+    {% assign found = false %}
   
     {% for static_file in site.static_files %}
-      {% if static_file.path != note_path %}
-          {% assign found = false %}
+      {% if static_file.path == note_path %}
+          {% assign found = true %}
           {% break %}
       {% endif %}
     {% endfor %}
