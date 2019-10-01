@@ -3,11 +3,27 @@ layout: default
 ---
 
 <ul>
-  {% for post in site.driving %}
+  {% for i in (1..100) %}
+    {% assign note_path = "/_driving/driving_note_" %}
+    {{ note_path | append: i }}
+    {{ note_path | append: ".html" }}
+    
+    {% assign found = true %}
+  
+    {% for static_file in site.static_files %}
+      {% if static_file.path != note_path %}
+          {% assign found = false %}
+          {% break %}
+      {% endif %}
+    {% endfor %}
+  
+    {% if found == false %}
+      {% break %}
+    {% endif %}
+  
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.create_date }} - {{ post.modify_date }}</p>
-      <p>{{ post.excerpt }}</p>
+      <h2>{{ note_path | append: i }}</h2>
     </li>
+  
   {% endfor %}
 </ul>
