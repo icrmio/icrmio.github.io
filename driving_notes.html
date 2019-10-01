@@ -9,6 +9,7 @@ layout: default
     {% assign found = false %}
   
     {% for static_file in site.static_files %}
+      {{static_file.path | append: " | "}}
       {% if static_file.path == note_path %}
           {% assign found = true %}
           {% break %}
@@ -16,6 +17,7 @@ layout: default
     {% endfor %}
   
     {% if found == false %}
+      not found
       {% break %}
     {% endif %}
   
